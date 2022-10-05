@@ -102,9 +102,29 @@ nav{
         font-size: 4rem;
     }
 
+}
+
+// contact 
+
+
+// Footer
+
+footer{
+    text-align: center;
+    padding: 4rem 0;
+
+    ul{
+        padding: 0;
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+        
+        // gör så att texten wrappar
+        flex-flow: row wrap;
         
 
-    
+    }
 }
 
 
