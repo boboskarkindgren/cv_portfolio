@@ -14,7 +14,8 @@ body{
     font-family: $font-standard;
     background-color:purple;
     color: white;
-    font-size: 1rem;
+    // standard size?
+    font-size: 1.3rem;
 }
 
 h1,
@@ -105,6 +106,20 @@ nav{
 }
 
 // contact 
+
+.contact-wrapper{
+    background-color: black;
+}
+
+#contact{
+    // background-color: black;
+    width: 400px;
+    /* margin: 2rem 0; */
+    text-align: center;
+    margin: 0 auto;
+    padding: 4rem 0;
+
+}
 
 
 // Footer
