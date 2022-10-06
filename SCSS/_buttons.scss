@@ -1,0 +1,13 @@
+.button {
+    background-color: $color-3;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: $font-special;
+}
+
+.button:hover{
+    color: white;
+    background-color:#67ef05;
+}

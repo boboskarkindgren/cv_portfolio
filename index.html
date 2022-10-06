@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Oxygen+Mono&display=swap" rel="stylesheet">
-    <!-- google fonts -->
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/00ff373c81.js" crossorigin="anonymous"></script>
     <title>cv-portfolio</title>
 </head>
 <body>
@@ -18,26 +19,34 @@
             <ul>
                 <li>
                     <h1>
-                        <a href="">Bob Kindgren</a>
+                        <a href="#">Bob Kindgren</a>
                     </h1>
                 </li>
                 <li>
-                    <a href="">Projects</a>
+                    <a href="#">Projects</a>
                 </li>
                 <li>
-                    <a href="">About</a>
+                    <a href="#">About</a>
                 </li>
                 <li>
-                    <a href="">Contact</a>
+                    <a href="#">Contact</a>
                 </li>
                 <li>
-                    <a href="">Linkedin</a>
+                    <a href="#">
+                        <!-- kolla upp detta. Varför har jag gjort som jag gjort? -->
+                        <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+                        <span class="sr-only">LinkedIn</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="">Github</a>
+                    <a href="https://github.com/boboskarkindgren" target="_blank">
+                        <!-- kolla upp detta. Varför har jag gjort som jag gjort? -->
+                        <span class="fa-brands fa-square-github" aria-hidden="true"></span>
+                        <span class="sr-only">Github</span>
+                    </a>
                 </li>
                 <li>
-                    <a href="">Resume</a>
+                    <a href="#" class="button" target="_blank">Resume</a>
                 </li>
             </ul>
         </nav>
@@ -53,45 +62,51 @@
             </p>
         </section>
     </header>
-
-    <!-- <main>
+    <!-- gradient line -->
+    <div class="gradient-line"></div>
+    <main>
         <section id="projects">
             <h2>Projects I am proud of </h2>
             <article>
-                <h4>Latest project</h4>
-                <h3>Digi Waka</h3>
-                <p>Description of the project. This should be fairly concise while also describing the key components that you developed or worked on. It can be as long as you need it to be but should at least be a few sentences long. Be sure to include specific links anywhere in the description. A link looks like this, and multiple links look like this and like this.</p>
-                <h4>Technologies used include this project:</h4>
-                <ul>
-                    <li>Html</li>
-                    <li>Css</li>
-                    <li>Svg</li>
-                </ul>
-                <img src="" alt="Image of the project Digi Waka">
+                <div class="projects-text">
+                    <h4>Latest project</h4>
+                    <h3>Digi Waka</h3>
+                    <p class="projects-text-box">Description of the project. This should be fairly concise while also describing the key components that you developed or worked on. It can be as long as you need it to be but should at least be a few sentences long. Be sure to include specific links anywhere in the description. A link looks like this, and multiple links look like this and like this.</p>
+                    <h4>Technologies used include this project:</h4>
+                    <ul>
+                        <li>Html</li>
+                        <li>Css</li>
+                        <li>Svg</li>
+                    </ul>
+                </div>
+                <img src="img/bungy.JPG" alt="Image of the project Digi Waka">
             </article>
         </section>
-    </main> -->
+    </main>
+    <!-- gradient line -->
+    <div class="gradient-line"></div>
     <div class="contact-wrapper">
         <section id="contact">
             <h2>Contact me</h2>
             <p>I'm always interested in hearing about new learning opportunities, creating something, or potential work offerings.</p>
             <p>
-                <a href="">Email me</a>
+                <a href="#" class="button" target="_blank">Email me</a>
             </p>
         </section>
     </div>
-
+    <!-- gradient line -->
+    <div class="gradient-line"></div>
     <footer>
         <h2>Bob Kindgren : Front End Developer</h2>
         <ul>
             <li>
-                <a href="">Linkedin</a>
+                <a href="#">Linkedin</a>
             </li>
             <li>
-                <a href="">Github</a>
+                <a href="#">Github</a>
             </li>
             <li>
-                <a href="">Mail</a>
+                <a href="#">Mail</a>
             </li>
         </ul>
         <p>

@@ -1,4 +1,5 @@
 @import "config";
+@import "buttons";
 
 * {
     box-sizing: border-box;
@@ -37,6 +38,10 @@ li{
     list-style-type: none;
 }
 
+img{
+    width: 100%;
+}
+
 // navbar
 
 nav{
@@ -56,12 +61,14 @@ nav{
         justify-content: center;
         align-items: center;
         gap: 2rem;
-        // gör så att texten wrappar
+        // gör så att texten wrappar. Måste den användas med flex basis: 100%?
         flex-flow: row wrap;
+        // ett annat sätt att sänka font-size responsivt. Är det samma sak som 0.8 rem? om standard är 1?
+        font-size: 80%;
     }
 
     li:first-child{
-        // flex basis gör att innehållet tar upp en hel rad och flyttar ner nästa rad.
+        // flex basis gör att innehållet tar upp en hel rad och flyttar ner nästa rad. Måste denna användas tsm med flex-flow: row wrap?
         flex-basis: 100%;
         text-align: center;
     }
@@ -105,6 +112,57 @@ nav{
 
 }
 
+// projects
+
+#projects{
+    padding: 4rem 1rem;
+
+    h2{
+        font-size: 2.5rem;
+        // vad betyder nedanstående uträkning?
+        margin-bottom: calc(2.5rem * 1.5);
+    }
+
+    h4{
+        margin: 0;
+        font-family: $font-special;
+        font-size: 1rem;
+    }
+
+    h3{
+        color: #43f891;
+    } 
+    
+    ul{
+        padding: 0;
+        margin: 0;
+        font-size: 1rem;
+        text-transform: uppercase;
+        display: flex;
+        gap: 1rem;
+        justify-content: flex-start;
+        flex-flow: row wrap;
+    }
+
+    img{
+        margin: 2rem 0 4rem 0;
+        font-size: 1rem;
+        padding: 1rem;
+        border-radius: 25px;
+        border-top: 1px solid #43F891;
+        border-left: 1px solid #43f891;
+    }
+}
+
+.projects-text-box{
+    background-color: black;
+    padding: 1rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    line-height: 1.5;
+    // var har den sin margin från?
+}
+
 // contact 
 
 .contact-wrapper{
@@ -140,6 +198,15 @@ footer{
         
 
     }
+}
+
+// layout specials: 
+
+// Gradient = https://cssgradient.io/
+
+.gradient-line{
+    background: linear-gradient(90deg, rgba(250,232,77,1) 0%, rgba(67,248,145,1) 100%);
+    height: 2px;
 }
 
 
