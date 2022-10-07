@@ -3,7 +3,9 @@
 // attribute-selector. Tar alla classname med fa- i sig och gör om.
 nav [class*="fa-"] {
         // 1.5 rem blir större eftersom texten är satt till 80% av rem i css. 
-        font-size: 150%; 
+        font-size: 150%;
+        color: $color-5;
+         
 }
 
 
@@ -15,6 +17,8 @@ nav h1 [class*="fa-"] {
 nav h1 [class*="fa-"]:hover {
     color:$color-3;
 }
+
+
 
 
 footer [class*="fa-"] {
