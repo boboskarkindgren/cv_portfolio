@@ -1,0 +1,17 @@
+// font-awesome icons
+
+nav {
+    // attribute-selector. Tar alla classname med fa- i sig och gör om.
+    [class*="fa-"] {
+        // 1.5 rem blir större eftersom texten är satt till 80% av rem i css. 
+        font-size: 150%; 
+    }
+}
+
+footer {
+
+    [class*="fa-"] {
+        // 100% är samma som parent, dvs ul på 3rem 
+        font-size: 100%; 
+    }
+}
