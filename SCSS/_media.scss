@@ -1,0 +1,23 @@
+
+@media (min-width: 767px) {
+
+    #projects{
+
+        article{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .projects-text {
+
+            order: 2;
+            text-align: right;
+        }
+
+        ul{
+            justify-content: flex-end;
+        }
+    }
+    
+}
