@@ -1,15 +1,22 @@
 .flipping-card-container{
     perspective: 700px;
-    position: absolute;
-    top: 16px;
-}
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
     
+
+
+    h1{
+        font-family: $font-standard;
+    }
+
+}
 
 .card{
     position: relative;
     color: white;
     text-align: center;
-    line-height: 200px;
+    line-height: 90px;
     width: 200px;
     height: 200px;
     /* background: blue; */
@@ -31,7 +38,10 @@
     width: 200px;
     height: 200px;
     backface-visibility: hidden;
-    background: blue;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(250,232,77,1) 19%, rgba(67,248,145,1) 83%);
+    border-radius: 100%;
+    
 
 }
 
@@ -43,8 +53,9 @@ h1{
     margin: 0;
 }
 
-img{
+.back img{
     
     width: 200px;
     height: 200px;
+    border-radius: 100%;
 }

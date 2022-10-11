@@ -1,6 +1,7 @@
 @import "config";
 @import "buttons";
 @import "icons";
+@import "flipping-card";
 @import "media";
 
 
@@ -87,10 +88,12 @@ nav{
 // header content
 #header-intro{
     padding: 4rem 1rem 10rem 1rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
     // centrerar text? men var centrerar texten? Förstår inte riktigt?
     max-width: 1200px;
     margin: 0 auto;
+    // for the flipping card
+    position: relative;
 
     p{
         font-size: 1rem;
@@ -242,6 +245,19 @@ footer{
         }
     }
     
+}
+
+// just for the flipping card
+@media (min-width: 1035px) {
+    .flipping-card-container{
+        display: block;
+        position: absolute;
+        right: 125px;
+        top: 16px;
+        
+
+    }
+
 }
 
 
