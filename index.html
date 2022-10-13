@@ -20,7 +20,11 @@
 </head>
 <body>
     <header>
-        <nav> 
+        <div class="header-crown">
+            <span class="fa-solid fa-crown" aria-hidden="true"></span>
+            <span class="fa-solid fa-crown" aria-hidden="true"></span>
+        </div>
+        <nav>  
             <ul>
                 <li>
                     <h1>
@@ -31,7 +35,7 @@
                     </h1>
                 </li>
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a href="#projects">Achievements</a>
                 </li>
                 <li>
                     <a href="#">About</a>
@@ -42,14 +46,14 @@
                 <li>
                     <a href="https://www.linkedin.com/in/bob-oskar-kindgren-84997a1a6/" target="_blank">
                         <!-- kolla upp detta. Varför har jag gjort som jag gjort? -->
-                        <span class="fa-brands fa-linkedin" aria-hidden="true"></span>
+                        <abbr title="LinkedIn" class="fa-brands fa-linkedin" aria-hidden="true"></abbr>
                         <span class="sr-only">LinkedIn</span>
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/boboskarkindgren" target="_blank">
                         <!-- kolla upp detta. Varför har jag gjort som jag gjort? -->
-                        <span class="fa-brands fa-square-github" aria-hidden="true"></span>
+                        <abbr title="Github" class="fa-brands fa-square-github" aria-hidden="true"></abbr>
                         <span class="sr-only">Github</span>
                     </a>
                 </li>
@@ -64,9 +68,9 @@
                 <span>Bob Kindgren.</span>
             </p>
             <h2>I explore the web.</h2>
-            <p>I am a Front End Developer student, specializing in HTML, CSS and Javascript.</p>
+            <p>I am a Front End Developer student, specializing in <abbr title="Hyper Text Markup Language">Html</abbr>, <abbr title="Cascading Style Sheets">Css</abbr> and JavaScript.</p>
             <p>Currently I am working on my portfolio, including
-                <a href="">my projects.</a>
+                <a href="">my Achievements.</a>
             </p>
 
             <!-- test flipping card-->
@@ -87,18 +91,18 @@
     <div class="gradient-line"></div>
     <main>
         <section id="projects">
-            <h2>Projects I am proud of </h2>
+            <h2>Achievements I am proud of </h2>
             <!-- lägg in abbr på förkortningar för tillgänglighet -->
             <article>
                 <div class="projects-text">
                     <h4>Latest project</h4>
-                    <h3>Bungy</h3>
+                    <h3>Bungyjump</h3>
                     <p class="projects-text-box">Description of the project. This should be fairly concise while also describing the key components that you developed or worked on. It can be as long as you need it to be but should at least be a few sentences long. Be sure to include specific links anywhere in the description. A link looks like this, and multiple links look like this and like this.</p>
                     <h4>Technologies used include this project:</h4>
                     <ul>
-                        <li>Html</li>
-                        <li>Css</li>
-                        <li>Svg</li>
+                        <li><abbr title="Hyper Text Markup Language">HTML</abbr></li>
+                        <li> <abbr title="Cascading Style Sheets">Css</abbr></li>
+                        <li> <abbr title="JavaScript">JS</abbr></li>
                     </ul>
                 </div>
                 <!-- bild är större i mobilvy än desktop. I network ser der ut som att alla bilder laddas vid bredd över 760?. Hmm.?? -->
@@ -118,9 +122,9 @@
                     <p class="projects-text-box">Description of the project. This should be fairly concise while also describing the key components that you developed or worked on. It can be as long as you need it to be but should at least be a few sentences long. Be sure to include specific links anywhere in the description. A link looks like this, and multiple links look like this and like this.</p>
                     <h4>Technologies used include this project:</h4>
                     <ul>
-                        <li>Html</li>
-                        <li>Css</li>
-                        <li>Svg</li>
+                        <li><abbr title="Hyper Text Markup Language">HTML</abbr></li>
+                        <li> <abbr title="Cascading Style Sheets">Css</abbr></li>
+                        <li> <abbr title="Grid Layout Module">Grid</abbr></li>
                     </ul>
                 </div>
                 <img 
@@ -139,8 +143,8 @@
                     <h4>Technologies used include this project:</h4>
                     <ul>
                         <li><abbr title="Hyper Text Markup Language">HTML</abbr></li>
-                        <li>Css</li>
-                        <li>Svg</li>
+                        <li> <abbr title="Cascading Style Sheets">Css</abbr></li>
+                        <li> <abbr title="Flexible Box Layout">Flex</abbr></li>
                     </ul>
                 </div>
                 <img  
@@ -187,7 +191,7 @@
             </li>
         </ul>
         <p>
-            <small>&copy 2021 Bob Kindgren. All rights reserved.</small>
+            <small>&copy 2022 Bob Kindgren. All rights reserved.</small>
         </p>
     </footer> 
 </body>

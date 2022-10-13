@@ -47,6 +47,7 @@ img{
     width: 100%;
 }
 
+
 // navbar
 
 nav{
@@ -54,6 +55,9 @@ nav{
     font-family: $font-special;
     // font-size: 80%;
     padding: 4rem 1rem;
+    
+    
+    
 
     h1{
         font-family: $font-standard;
@@ -70,6 +74,8 @@ nav{
         flex-flow: row wrap;
         // ett annat sätt att sänka font-size responsivt. Är det samma sak som 0.8 rem? om standard är 1?
         font-size: 80%;
+        
+        
     }
 
     li:first-child{
@@ -80,7 +86,19 @@ nav{
 
     a{
         text-decoration: none;
+        // för större klickyta
+        padding: 10px;
         // display: block;
+    }
+
+    abbr{
+        text-decoration: none;
+        // för större klickyta
+        padding: 10px;
+    }
+
+    abbr:hover{
+        color: $color-3;
     }
     
 }
@@ -116,6 +134,13 @@ nav{
         font-size: 4rem;
     }
 
+    abbr{
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+
+    
+
 }
 
 // projects
@@ -125,7 +150,7 @@ nav{
 
     h2{
         font-size: 2.5rem;
-        // vad betyder nedanstående uträkning?
+        // testning av calc
         margin-bottom: calc(2.5rem * 1.5);
     }
 
@@ -157,6 +182,11 @@ nav{
         border-radius: 25px;
         border-top: 1px solid #43F891;
         border-left: 1px solid #43f891;
+    }
+
+    // reversed image
+    .reverse img{
+        order: 2;
     }
 }
 
@@ -223,6 +253,7 @@ footer{
 // media querys. Kunde inte ha som egen media eftersom något måste blivit fel med ordningen?
 @media (min-width: 767px) {
 
+
     #projects{
         // gör så att texten lägger sig jämnt med ovan section. Dvs section efter navigation.
         max-width: 1200px;
@@ -249,13 +280,30 @@ footer{
     
 }
 
-// just for the flipping card
+// just for the flipping card and crown
 @media (min-width: 1035px) {
     .flipping-card-container{
         display: block;
         position: absolute;
         right: 125px;
         top: 16px;
+        
+    }
+
+    .header-crown{
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+        width: 100%;
+    
+        span{
+            margin: 1rem;
+        }
+    }
+
+    header div [class*="fa-"]{
+        display: block;
+    
         
     }
 
@@ -273,7 +321,6 @@ footer{
 
 
 }
-
 
 
 

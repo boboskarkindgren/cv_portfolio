@@ -1,6 +1,14 @@
 // font-awesome icons
 
 // attribute-selector. Tar alla classname med fa- i sig och gör om.
+header div [class*="fa-"]{
+    color: $color-5;
+    display: none;
+    
+
+    
+}
+
 nav [class*="fa-"] {
         // 1.5 rem blir större eftersom texten är satt till 80% av rem i css. 
         font-size: 150%;
