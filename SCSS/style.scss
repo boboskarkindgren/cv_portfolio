@@ -196,8 +196,24 @@ nav{
     border-radius: 10px;
     font-size: 1rem;
     line-height: 1.5;
+    text-align: left;
     // var har den sin margin från?
+
+    a{
+        display: block;
+        text-transform: uppercase;
+    }
 }
+
+// .video-container{
+//     position: relative;
+
+//     a{
+//         position: absolute;
+//         left: 0px;
+//         top: 62px;
+//     }
+// }
 
 // contact 
 
