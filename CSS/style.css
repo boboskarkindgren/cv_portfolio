@@ -1,1 +1,348 @@
-.button{background-color:#43f891;color:#fff;padding:.5rem;border-radius:5px;text-decoration:none;font-family:"Oxygen Mono",monospace}.button:hover{color:#fff;background-color:#67ef05}header div [class*=fa-]{color:#fae84d;display:none}nav [class*=fa-]{font-size:150%;color:#fae84d}nav h1 [class*=fa-]{color:#fae84d}nav h1 [class*=fa-]:hover{color:#92f04d}footer [class*=fa-]{font-size:100%;color:#fae84d}footer [class*=fa-]:hover{color:#67ef05}.flipping-card-container{perspective:700px;display:flex;justify-content:center;padding-top:4rem}.flipping-card-container h1{font-family:"Oxygen",sans-serif}.card{position:relative;color:#fff;text-align:center;line-height:90px;width:200px;height:200px;margin:20px;transition:all .6s ease;transform-style:preserve-3d}.card:hover{transform:rotateY(180deg)}.front,.back{position:absolute;top:0;left:0;width:200px;height:200px;backface-visibility:hidden;background:#fff;background:radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(250, 232, 77) 19%, rgb(67, 248, 145) 83%);border-radius:100%}.back{transform:rotateY(180deg)}h1{margin:0}.back img{width:200px;height:200px;border-radius:100%}@media(min-width: 767px){#projects article{display:grid;grid-template-columns:1fr 1fr;gap:1rem}#projects .projects-text{order:2;text-align:right}#projects ul{justify-content:flex-end}}*{box-sizing:border-box}body{padding:0;margin:0;font-family:"Oxygen",sans-serif;background-color:purple;color:#fff;font-size:1.3rem}h1,h2,h3{margin:0}a{color:#fff}a:hover{color:#92f04d;text-decoration:none}li{list-style-type:none}img{width:100%}nav{font-family:"Oxygen Mono",monospace;padding:4rem 1rem}nav h1{font-family:"Oxygen",sans-serif}nav ul{margin:0;padding:0;display:flex;justify-content:center;align-items:center;gap:2rem;flex-flow:row wrap;font-size:80%}nav li:first-child{flex-basis:100%;text-align:center}nav a{text-decoration:none;padding:10px}nav abbr{text-decoration:none;padding:10px}nav abbr:hover{color:#92f04d}#header-intro{padding:4rem 1rem 10rem 1rem;padding-bottom:5rem;max-width:1200px;margin:0 auto;position:relative}#header-intro p{font-size:1rem;line-height:1.5}#header-intro .name{font-family:"Oxygen Mono",monospace;font-size:1rem}#header-intro .name span{display:block;font-size:4rem;color:#43f891}#header-intro h2{font-size:4rem}#header-intro abbr{text-decoration:none;text-transform:uppercase}#projects{padding:4rem 1rem}#projects h2{font-size:2.5rem;margin-bottom:3.75rem}#projects h4{margin:0;font-family:"Oxygen Mono",monospace;font-size:1rem}#projects h3{color:#43f891}#projects ul{padding:0;margin:0;font-size:1rem;text-transform:uppercase;display:flex;gap:1rem;justify-content:flex-start;flex-flow:row wrap}#projects img{margin:2rem 0 4rem 0;font-size:1rem;padding:1rem;border-radius:25px;border-top:1px solid #43f891;border-left:1px solid #43f891}#projects .reverse img{order:2}.projects-text-box{background-color:#000;padding:1rem;border-radius:10px;font-size:1rem;line-height:1.5;text-align:left}.projects-text-box a{display:block;text-transform:uppercase;margin-top:7px}.contact-wrapper{background-color:#000}#contact{max-width:400px;text-align:center;margin:0 auto;padding:4rem 0}footer{text-align:center;padding:4rem 0}footer ul{padding:0;margin:2rem 0;display:flex;justify-content:center;gap:3rem;font-size:3rem;flex-flow:row wrap}.gradient-line{background:linear-gradient(90deg, rgb(250, 232, 77) 0%, rgb(67, 248, 145) 100%);height:2px}.resume{font-family:"Oxygen",sans-serif;padding:4rem 1rem 10rem 1rem;padding-bottom:5rem;max-width:1200px;margin:0 auto}.resume h2{font-size:4rem}@media(min-width: 767px){#projects{max-width:1200px;margin:0 auto}#projects article{display:grid;grid-template-columns:1fr 1fr;gap:1rem}#projects .projects-text{order:2;text-align:right}#projects ul{justify-content:flex-end}}@media(min-width: 1035px){.flipping-card-container{display:block;position:absolute;right:125px;top:16px}.header-crown{display:flex;justify-content:space-between;position:fixed;width:100%}.header-crown span{margin:1rem}header div [class*=fa-]{display:block}}/*# sourceMappingURL=style.css.map */
+/*Fonts*/
+/* colors */
+/* Color Theme Swatches in Hex */
+.button {
+  background-color: #43F891;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-family: "Oxygen Mono", monospace;
+}
+
+.button:hover {
+  color: white;
+  background-color: #67ef05;
+}
+
+header div [class*=fa-] {
+  color: #FAE84D;
+  display: none;
+}
+
+nav [class*=fa-] {
+  font-size: 150%;
+  color: #FAE84D;
+}
+
+nav h1 [class*=fa-] {
+  color: #FAE84D;
+}
+
+nav h1 [class*=fa-]:hover {
+  color: #92F04D;
+}
+
+footer [class*=fa-] {
+  font-size: 100%;
+  color: #FAE84D;
+}
+
+footer [class*=fa-]:hover {
+  color: #67ef05;
+}
+
+.flipping-card-container {
+  perspective: 700px;
+  display: flex;
+  justify-content: center;
+  padding-top: 4rem;
+  -webkit-perspective: 700px;
+}
+.flipping-card-container h1 {
+  font-family: "Oxygen", sans-serif;
+}
+
+.card {
+  position: relative;
+  color: white;
+  text-align: center;
+  line-height: 90px;
+  width: 200px;
+  height: 200px;
+  /* background: blue; */
+  margin: 20px;
+  transition: all 0.6s ease;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform 0.6s ease;
+  -webkit-transform-style: preserve-3d;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  /* transform: rotateX(180deg); */
+}
+
+.front, .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  backface-visibility: hidden;
+  background: rgb(255, 255, 255);
+  background: radial-gradient(circle, rgb(255, 255, 255) 0%, rgb(250, 232, 77) 19%, rgb(67, 248, 145) 83%);
+  border-radius: 100%;
+  -webkit-backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+h1 {
+  margin: 0;
+}
+
+.back img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Oxygen", sans-serif;
+  background-color: purple;
+  color: white;
+  font-size: 1.3rem;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  color: white;
+}
+
+a:hover {
+  color: #92F04D;
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+nav {
+  font-family: "Oxygen Mono", monospace;
+  padding: 4rem 1rem;
+}
+nav h1 {
+  font-family: "Oxygen", sans-serif;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-flow: row wrap;
+  font-size: 80%;
+}
+nav li:first-child {
+  flex-basis: 100%;
+  text-align: center;
+}
+nav a {
+  text-decoration: none;
+  padding: 10px;
+}
+nav abbr {
+  text-decoration: none;
+  padding: 10px;
+}
+nav abbr:hover {
+  color: #92F04D;
+}
+
+#header-intro {
+  padding: 4rem 1rem 10rem 1rem;
+  padding-bottom: 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+#header-intro p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+#header-intro .name {
+  font-family: "Oxygen Mono", monospace;
+  font-size: 1rem;
+}
+#header-intro .name span {
+  display: block;
+  font-size: 4rem;
+  color: #43F891;
+}
+#header-intro h2 {
+  font-size: 4rem;
+}
+#header-intro abbr {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#projects {
+  padding: 4rem 1rem;
+}
+#projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 3.75rem;
+}
+#projects h4 {
+  margin: 0;
+  font-family: "Oxygen Mono", monospace;
+  font-size: 1rem;
+}
+#projects h3 {
+  color: #43f891;
+}
+#projects ul {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  text-transform: uppercase;
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  flex-flow: row wrap;
+}
+#projects img {
+  margin: 2rem 0 4rem 0;
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 25px;
+  border-top: 1px solid #43F891;
+  border-left: 1px solid #43f891;
+}
+#projects .reverse img {
+  order: 2;
+}
+
+.projects-text a {
+  text-decoration: none;
+}
+
+.projects-text-box {
+  background-color: black;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+.projects-text-box a {
+  display: block;
+  text-transform: uppercase;
+  margin-top: 7px;
+}
+
+.contact-wrapper {
+  background-color: black;
+}
+
+#contact {
+  max-width: 400px;
+  /* margin: 2rem 0; */
+  text-align: center;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 4rem 0;
+}
+footer ul {
+  padding: 0;
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  font-size: 3rem;
+  flex-flow: row wrap;
+}
+
+.gradient-line {
+  background: linear-gradient(90deg, rgb(250, 232, 77) 0%, rgb(67, 248, 145) 100%);
+  height: 2px;
+}
+
+.resume {
+  font-family: "Oxygen", sans-serif;
+  padding: 4rem 1rem 10rem 1rem;
+  padding-bottom: 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.resume h2 {
+  font-size: 4rem;
+}
+
+@media (min-width: 767px) {
+  #projects {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  #projects article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  #projects .projects-text {
+    order: 2;
+    text-align: right;
+  }
+  #projects ul {
+    justify-content: flex-end;
+  }
+}
+@media (min-width: 1035px) {
+  .flipping-card-container {
+    display: block;
+    position: absolute;
+    right: 125px;
+    top: 16px;
+  }
+  .header-crown {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+  }
+  .header-crown span {
+    margin: 1rem;
+  }
+  header div [class*=fa-] {
+    display: block;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,23 +1,25 @@
 
-@media (min-width: 767px) {
+// fungerade inte så låter det stå såhär för nu.
 
-    #projects{
+// @media (min-width: 767px) {
 
-        article{
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-        }
+//     #projects{
 
-        .projects-text {
+//         article{
+//             display: grid;
+//             grid-template-columns: 1fr 1fr;
+//             gap: 1rem;
+//         }
 
-            order: 2;
-            text-align: right;
-        }
+//         .projects-text {
 
-        ul{
-            justify-content: flex-end;
-        }
-    }
+//             order: 2;
+//             text-align: right;
+//         }
+
+//         ul{
+//             justify-content: flex-end;
+//         }
+//     }
     
-}
+// }
